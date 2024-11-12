@@ -6,7 +6,8 @@ valitse alustasi
 - [HURRIHOMOFY](https://open.spotify.com/album/66rQzTqQm0vPJOLD5YveAA) 
 - [VIEMÄRIPUTKI](https://www.youtube.com/playlist?list=PL9RFH1XmLdxP99dh7NEyfkgNWM8AICs0w) 
 - [LEVY-YHTIÖ TAUSTALLA](https://www.poptori.fi/)
-- Viikko 4
-- Viikko 5
-- Viikko 6
-- Harkkatyö
+- oma palvelin..... en tehnyt linkkejä näihin
+- Pohjola....
+- joku vitun homo joka on sitämieltä että sä tarviit tällasen🤑
+- ota vaikka toi ![SakariöstermalmSakuGIF (2)](https://github.com/user-attachments/assets/a60cdb90-7a63-4807-ba4f-4c7e5375c1ce)
+
