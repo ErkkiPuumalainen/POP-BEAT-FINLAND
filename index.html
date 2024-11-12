@@ -27,6 +27,12 @@
             border-radius: 50px;  /* Pyöristää kulmat niin, että painike on ovaali */
             transition: background-color 0.3s;  /* Liukuväriefekti taustavärin muutokselle */
             margin: 10px;  /* Lisää marginaali painikkeiden väliin */
+            width: 300px;  /* Kiinteä leveys kaikille painikkeille */
+            height: 50px;  /* Kiinteä korkeus kaikille painikkeille */
+            display: flex;
+            justify-content: center;  /* Keskittää tekstin vaakasuunnassa */
+            align-items: center;  /* Keskittää tekstin pystysuunnassa */
+            text-align: center; 
         }
 
         .my-button:hover {
@@ -59,23 +65,23 @@
 </head>
 <body>
 
-    <h1>Tervetuloa sivustolleni!</h1>
+    <h1>Tervetuloa Kake Randelin P-kiekolle!</h1>
 
     <p>Valitse alustasi:</p>
     
     <!-- Painikkeet ja linkit -->
     <div class="button-container">
-        <!-- Painike 1: HURRIHOMOFY -->
+        <!-- Painike 1: HURRIH -->
         <a href="https://open.spotify.com/album/66rQzTqQm0vPJOLD5YveAA">
-            <button class="my-button">HURRIHOMOFY</button>
+            <button class="my-button">SPOTIFY</button>
         </a>
 
-        <!-- Painike 2: VIEMÄRIPUTKI -->
+        <!-- Painike 2: YOUTUBE -->
         <a href="https://www.youtube.com/playlist?list=PL9RFH1XmLdxP99dh7NEyfkgNWM8AICs0w">
             <button class="my-button">VIEMÄRIPUTKI</button>
         </a>
 
-        <!-- Painike 3: LEVY-YHTIÖ TAUSTALLA -->
+        <!-- Painike 3: POPTORI OY -->
         <a href="https://www.poptori.fi/">
             <button class="my-button">LEVY-YHTIÖ TAUSTALLA</button>
         </a>
