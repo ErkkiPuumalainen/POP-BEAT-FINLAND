@@ -1,9 +1,9 @@
 body {
     background-color: #d2e2f2;
-    baground-image:url('/kuvat/taustakuva.jpg');
-    background-size: cover; /* Peittää koko näkymän */
-    background-position: center; /* Kohdistaa kuvan keskelle */
-    background-repeat: no-repeat; /* Estää kuvan toiston */
+    backround-image:url('/kuvat/taustakuva.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     font-family: Roboto, sans-serif;
 }
 
