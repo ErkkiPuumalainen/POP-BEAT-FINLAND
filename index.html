@@ -3,43 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sivustoni Etusivu</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<!DOCTYPE html>
-<html lang="fi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sivustoni Etusivu</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>☢️ HEITÄ HOMO VOLTTI😂😂😂</h1>
-    <h2>Tervetuloa nauttimaan parkkikiekkosi sisällöstä</h2>
-    <p>Valitse alustasi:</p>
+    <title>Painike-esimerkki</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  <!-- Fontti Roboto -->
+    <style>
+        body {
+            background-image: url('https://github.com/username/repository-name/raw/main/kuvat/taustakuva.jpg'); /* Muista päivittää polku */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Roboto, sans-serif;
+            text-align: center; /* Keskittää sisällön */
+            padding-top: 100px;  /* Lisää tilaa ylhäällä */
+        }
 
-    <ul>
+        /* Yleinen painiketyylit */
+        .my-button {
+            background-color: #003366;  /* Tummansininen taustaväri */
+            color: white;  /* Valkoinen teksti */
+            border: none;  /* Poistaa kehyksen */
+            padding: 15px 40px;  /* Sisäiset marginaalit (ylä/ala ja vasen/oikea) */
+            font-size: 16px;  /* Kirjasinkoko */
+            cursor: pointer;  /* Muuttaa kursoria sormeksi, kun hiiri menee painikkeen päälle */
+            border-radius: 50px;  /* Pyöristää kulmat niin, että painike on ovaali */
+            transition: background-color 0.3s;  /* Liukuväriefekti taustavärin muutokselle */
+            margin: 10px;  /* Lisää marginaali painikkeiden väliin */
+        }
+
+        .my-button:hover {
+            background-color: #002244;  /* Tummempi sininen hover-tilassa */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center; /* Keskittää painikkeet vaakasuunnassa */
+            flex-direction: column; /* Asettavat painikkeet pinoon */
+            align-items: center; /* Keskittää painikkeet pystysuunnassa */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Esimerkki Taustakuvasta ja Painikkeista</h1>
+
+    <!-- Painikkeiden sisältävä div -->
+    <div class="button-container">
+        <!-- Painike 1, joka vie Spotify-albumiin -->
         <button class="my-button" onclick="window.location.href='https://open.spotify.com/album/66rQzTqQm0vPJOLD5YveAA';">
-    HURRIHOMOFY
-</button>
-        <li><a href="https://www.youtube.com/playlist?list=PL9RFH1XmLdxP99dh7NEyfkgNWM8AICs0w">VIEMÄRIPUTKI</a></li>
-        <li><a href="https://www.poptori.fi/">LEVY-YHTIÖ TAUSTALLA</a></li>
-        <li>oma palvelin..... en tehnyt linkkejä näihin</li>
-        <li>Pohjola....</li>
-        <li>joku vitun homo joka on sitä mieltä että....... sä tarviit tällasen🤑</li>
-    </ul>
+            HURRIHOMOFY
+        </button>
 
-    <p>Hän mies on ihan sairaan nopee! 
-    <img src="https://github.com/user-attachments/assets/a60cdb90-7a63-4807-ba4f-4c7e5375c1ce" alt="SakariöstermalmSakuGIF"></p>
+        <!-- Painike 2, joka vie toiseen URL-osoitteeseen -->
+        <button class="my-button" onclick="window.location.href='https://www.example.com';">
+            Muu Linkki
+        </button>
+    </div>
 
-    <h1>Tervetuloa sivustolleni!</h1>
-    <p>Tämä on ensimmäinen GitHub Pages -sivuni.</p>
-</body>
-</html> 
-
-    <h1>Tervetuloa sivustolleni!</h1>
-   
 </body>
 </html>
