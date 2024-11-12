@@ -8,6 +8,6 @@ valitse alustasi
 - [LEVY-YHTIÖ TAUSTALLA](https://www.poptori.fi/)
 - oma palvelin..... en tehnyt linkkejä näihin
 - Pohjola....
-- joku vitun homo joka on sitämieltä että sä tarviit tällasen🤑
-- ota vaikka toi ![SakariöstermalmSakuGIF (2)](https://github.com/user-attachments/assets/a60cdb90-7a63-4807-ba4f-4c7e5375c1ce)
+- joku vitun homo joka on sitä mieltä että....... sä tarviit tällasen🤑
+- Hän mies on ihan sairaan nopee! ![SakariöstermalmSakuGIF (2)](https://github.com/user-attachments/assets/a60cdb90-7a63-4807-ba4f-4c7e5375c1ce)
 
