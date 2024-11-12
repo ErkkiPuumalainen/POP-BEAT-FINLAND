@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painike-esimerkki</title>
+    <title>Valitse alustasi</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  <!-- Fontti Roboto -->
     <style>
         body {
-            background-image: url('https://github.com/username/repository-name/raw/main/kuvat/taustakuva.jpg'); /* Muista päivittää polku */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background-color: #f0f0f0;
             font-family: Roboto, sans-serif;
             text-align: center; /* Keskittää sisällön */
-            padding-top: 100px;  /* Lisää tilaa ylhäällä */
+            padding-top: 100px;
         }
 
-        /* Yleinen painiketyylit */
+        h1 {
+            color: #333;
+        }
+
         .my-button {
             background-color: #003366;  /* Tummansininen taustaväri */
             color: white;  /* Valkoinen teksti */
@@ -33,39 +33,65 @@
             background-color: #002244;  /* Tummempi sininen hover-tilassa */
         }
 
-        h1 {
-            color: #333;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-        }
-
         .button-container {
             display: flex;
-            justify-content: center; /* Keskittää painikkeet vaakasuunnassa */
-            flex-direction: column; /* Asettavat painikkeet pinoon */
-            align-items: center; /* Keskittää painikkeet pystysuunnassa */
+            flex-direction: column;
+            align-items: center;
         }
+
+        .button-container a {
+            text-decoration: none;  /* Poistaa linkin alaviivan */
+        }
+
+        .my-button-container {
+            display: flex;
+            flex-direction: column;  /* Asettavat painikkeet pinoon */
+            align-items: center;  /* Keskittää painikkeet */
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            margin-top: 20px;
+        }
+
     </style>
 </head>
 <body>
 
-    <h1>Esimerkki Taustakuvasta ja Painikkeista</h1>
+    <h1>Tervetuloa sivustolleni!</h1>
 
-    <!-- Painikkeiden sisältävä div -->
+    <p>Valitse alustasi:</p>
+    
+    <!-- Painikkeet ja linkit -->
     <div class="button-container">
-        <!-- Painike 1, joka vie Spotify-albumiin -->
-        <button class="my-button" onclick="window.location.href='https://open.spotify.com/album/66rQzTqQm0vPJOLD5YveAA';">
-            HURRIHOMOFY
-        </button>
+        <!-- Painike 1: HURRIHOMOFY -->
+        <a href="https://open.spotify.com/album/66rQzTqQm0vPJOLD5YveAA">
+            <button class="my-button">HURRIHOMOFY</button>
+        </a>
 
-        <!-- Painike 2, joka vie toiseen URL-osoitteeseen -->
-        <button class="my-button" onclick="window.location.href='https://www.example.com';">
-            Muu Linkki
-        </button>
+        <!-- Painike 2: VIEMÄRIPUTKI -->
+        <a href="https://www.youtube.com/playlist?list=PL9RFH1XmLdxP99dh7NEyfkgNWM8AICs0w">
+            <button class="my-button">VIEMÄRIPUTKI</button>
+        </a>
+
+        <!-- Painike 3: LEVY-YHTIÖ TAUSTALLA -->
+        <a href="https://www.poptori.fi/">
+            <button class="my-button">LEVY-YHTIÖ TAUSTALLA</button>
+        </a>
+
+        <!-- Omat linkit, ei klikattavaa -->
+        <button class="my-button" disabled>Oma palvelin...</button>
+        <button class="my-button" disabled>Pohjola...</button>
+        <button class="my-button" disabled>Joku vitun homo...</button>
     </div>
+
+    <!-- Kuvan lisääminen -->
+    <p>Hän mies on ihan sairaan nopee!</p>
+    <img src="https://github.com/user-attachments/assets/a60cdb90-7a63-4807-ba4f-4c7e5375c1ce" alt="SakariöstermalmSakuGIF">
+
+    <p>Tämä on ensimmäinen GitHub Pages -sivuni.</p>
 
 </body>
 </html>
+
