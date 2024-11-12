@@ -1,5 +1,5 @@
 Heitä homo voltti
-## Tervetuloa nauttimaan Parkkikiekkosi sisällöstä
+## Tervetuloa nauttimaan parkkikiekkosi sisällöstä
 valitse alustasi
 
 
