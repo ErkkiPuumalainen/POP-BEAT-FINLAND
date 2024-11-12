@@ -1,4 +1,4 @@
-Heitä homo voltti
+☢️ HEITÄ HOMO VOLTTI😂😂😂 
 ## Tervetuloa nauttimaan parkkikiekkosi sisällöstä
 valitse alustasi
 
