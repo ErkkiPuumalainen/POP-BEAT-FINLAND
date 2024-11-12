@@ -7,105 +7,107 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  <!-- Fontti Roboto -->
     <style>
         body {
-            background-color: #000000;
+            background-color: #000000;  /* Musta taustaväri */
             font-family: Roboto, sans-serif;
-            text-align: center; /* Keskittää sisällön */
+            text-align: center;  /* Keskittää sisällön */
             padding-top: 100px;
+            color: white;  /* Valkoinen teksti */
         }
 
         h1 {
-            color: #333;
+            color: #fff;  /* Varmistaa, että otsikko on valkoinen */
         }
 
+        /* Painikkeet */
         .my-button {
             background-color: #003366;  /* Tummansininen taustaväri */
             color: white;  /* Valkoinen teksti */
-            border:border: 2px solid #C0C0C0;   /* Poistaa kehyksen */
+            border: 2px solid #C0C0C0;   /* Hopeanvärinen kehys */
             padding: 15px 40px;  /* Sisäiset marginaalit (ylä/ala ja vasen/oikea) */
             font-size: 16px;  /* Kirjasinkoko */
             cursor: pointer;  /* Muuttaa kursoria sormeksi, kun hiiri menee painikkeen päälle */
             border-radius: 50px;  /* Pyöristää kulmat niin, että painike on ovaali */
-            transition: background-color 0.3s;  /* Liukuväriefekti taustavärin muutokselle */
+            transition: background-color 0.3s, box-shadow 0.3s;  /* Liukuväriefekti taustavärin muutokselle */
             margin: 10px;  /* Lisää marginaali painikkeiden väliin */
             width: 300px;  /* Kiinteä leveys kaikille painikkeille */
             height: 50px;  /* Kiinteä korkeus kaikille painikkeille */
             display: flex;
             justify-content: center;  /* Keskittää tekstin vaakasuunnassa */
             align-items: center;  /* Keskittää tekstin pystysuunnassa */
-            text-align: center; 
+            text-align: center;
+            border: 2px solid #FFD700;  /* Kultainen kehys painikkeen ympärille */
         }
 
+        /* Hover-tilan muutos painikkeille */
         .my-button:hover {
             background-color: #002244;  /* Tummempi sininen hover-tilassa */
+            box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.8);  /* Kultainen hehku varjo */
         }
 
+        /* Painikkeiden ympäröivä kehys */
         .button-container {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-top: 30px;
         }
 
-        .button-container a {
-            text-decoration: none;  /* Poistaa linkin alaviivan */
-        }
-
+        /* Kehys, joka ympäröi kaikkia painikkeita */
         .my-button-container {
             display: flex;
             flex-direction: column;  /* Asettavat painikkeet pinoon */
             align-items: center;  /* Keskittää painikkeet */
-             border: 3px solid #C0C0C0;  /* Hopeanvärinen kehys koko painikepannalle */
             padding: 20px;  /* Lisää tilaa painikkeiden ympärille */
-            border-radius: 15px;  /* Pyöristää kulmat */
-            background-color: #ffffff;  /* Valkoinen taustaväri kehykseen */
-            margin-top: 30px;  /* Lisää tilaa kuvan ja painikkeiden väliin */
+            background-color: #222222;  /* Tummanharmaa taustaväri kehykseen */
             width: 350px;  /* Asettaa containerin leveys */
             margin: 0 auto;  /* Keskittää containerin */
         }
 
+        /* Poistaa linkin alaviivat */
+        .button-container a {
+            text-decoration: none;
+        }
+
+        /* Kuvan asetukset */
         img {
             width: 300px;
             height: auto;
-            margin-top: 20px;
+            margin-top: 20px;  /* Lisää tilaa kuvan ja painikkeiden väliin */
         }
-
     </style>
 </head>
 <body> 
+
 <h1>Tervetuloa P-kiekolle!</h1>
 
- <!-- Kuvan lisääminen -->
-    <p>Kake Randelin Hitit</p>
-    <img src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/refs/heads/main/kuvat/Kake%20Randelin.jfif">
+<!-- Kuvan lisääminen -->
+<p>Kake Randelin Hitit</p>
+<img src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/refs/heads/main/kuvat/Kake%20Randelin.jfif">
 
-    
-    <h1>Valitse alustasi:</h1>
-    
-    <!-- Painikkeet ja linkit -->
-    <div class="button-container">
-        <!-- Painike 1: HURRIH -->
-        <a href="https://open.spotify.com/album/66rQzTqQm0vPJOLD5YveAA">
-            <button class="my-button">SPOTIFY</button>
-        </a>
+<h1>Valitse alustasi:</h1>
 
-        <!-- Painike 2: YOUTUBE -->
-        <a href="https://www.youtube.com/playlist?list=PL9RFH1XmLdxP99dh7NEyfkgNWM8AICs0w">
-            <button class="my-button">YouTube</button>
-        </a>
+<!-- Painikkeet ja linkit -->
+<div class="my-button-container">
+    <!-- Painike 1: HURRIH -->
+    <a href="https://open.spotify.com/album/66rQzTqQm0vPJOLD5YveAA">
+        <button class="my-button">Spotify</button>
+    </a>
 
-        <!-- Painike 3: POPTORI OY -->
-        <a href="https://www.poptori.fi/">
-            <button class="my-button">Poptori Oy</button>
-        </a>
+    <!-- Painike 2: YOUTUBE -->
+    <a href="https://www.youtube.com/playlist?list=PL9RFH1XmLdxP99dh7NEyfkgNWM8AICs0w">
+        <button class="my-button">YouTube</button>
+    </a>
 
-        <!-- Omat linkit, ei klikattavaa -->
-        <button class="my-button" disabled>Oma palvelin...</button>
-        <button class="my-button" disabled>Mainostaja 2</button>
-        <button class="my-button" disabled>Mainostaja 3</button>
-    </div>
+    <!-- Painike 3: POPTORI OY -->
+    <a href="https://www.poptori.fi/">
+        <button class="my-button">Poptori Oy</button>
+    </a>
 
-   
-   
+    <!-- Omat linkit, ei klikattavaa -->
+    <button class="my-button" disabled>Oma palvelin...</button>
+    <button class="my-button" disabled>Mainostaja 2</button>
+    <button class="my-button" disabled>Mainostaja 3</button>
+</div>
 
 </body>
 </html>
-
