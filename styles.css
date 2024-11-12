@@ -1,6 +1,6 @@
 body {
     background-color: #d2e2f2;
-    backround-image:url('/kuvat/taustakuva.jpg');
+    background-image: url('/kuvat/taustakuva.jpg'); /* Korjattu kirjoitusasu */
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
