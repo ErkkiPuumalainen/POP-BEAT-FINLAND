@@ -4,68 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valitse alustasi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  <!-- Fontti Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #000000;  /* Musta taustaväri */
+            background-color: #000000;
             font-family: Roboto, sans-serif;
-            text-align: center;  /* Keskittää sisällön */
+            text-align: center;
             padding-top: 5px;
-            color: white;  /* Valkoinen teksti */
+            color: white;
         }
 
         h1 {
-            color: #fff;  /* Varmistaa, että otsikko on valkoinen */
+            color: #fff;
         }
 
-        /* Painikkeet */
+        /* Yleiset painikkeet */
         .my-button {
-            background-color: #003366;  /* Tummansininen taustaväri */
-            color: white;  /* Valkoinen teksti */
-            border: 2px solid #C0C0C0;   /* Hopeanvärinen kehys */
-            padding: 15px 40px;  /* Sisäiset marginaalit (ylä/ala ja vasen/oikea) */
-            font-size: 16px;  /* Kirjasinkoko */
-            cursor: pointer;  /* Muuttaa kursoria sormeksi, kun hiiri menee painikkeen päälle */
-            border-radius: 50px;  /* Pyöristää kulmat niin, että painike on ovaali */
-            transition: background-color 0.3s, box-shadow 0.3s;  /* Liukuväriefekti taustavärin muutokselle */
-            margin: 10px;  /* Lisää marginaali painikkeiden väliin */
-            width: 300px;  /* Kiinteä leveys kaikille painikkeille */
-            height: 50px;  /* Kiinteä korkeus kaikille painikkeille */
+            background-color: #003366;
+            color: white;
+            border: 2px solid #FFD700; /* Kultainen kehys */
+            padding: 15px 40px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            margin: 10px;
+            width: 300px;
+            height: 50px;
             display: flex;
-            justify-content: center;  /* Keskittää tekstin vaakasuunnassa */
-            align-items: center;  /* Keskittää tekstin pystysuunnassa */
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            border: 2px solid #FFD700;  /* Kultainen kehys painikkeen ympärille */
         }
 
-        /* Hover-tilan muutos painikkeille */
+        /* Hover-efekti painikkeille */
         .my-button:hover {
-            background-color: #002244;  /* Tummempi sininen hover-tilassa */
-            box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.8);  /* Kultainen hehku varjo */
+            background-color: #002244;
+            box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.8);
         }
 
-        /* Painikkeiden ympäröivä kehys */
-        .button-container {
+        /* Painikkeiden ympärillä oleva kehys */
+        .my-button-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 30px;
-        }
-
-        /* Kehys, joka ympäröi kaikkia painikkeita */
-        .my-button-container {
-            display: flex;
-            flex-direction: column;  /* Asettavat painikkeet pinoon */
-            align-items: center;  /* Keskittää painikkeet */
-            padding: 20px;  /* Lisää tilaa painikkeiden ympärille */
-            background-color: #000000;  /* Tummanharmaa taustaväri kehykseen */
-            width: 350px;  /* Asettaa containerin leveys */
-            margin: 0 auto;  /* Keskittää containerin */
-            border: none;
+            padding: 20px;
+            background-color: #000000;
+            width: 350px;
+            margin: 0 auto;
+            border: 2px solid #C0C0C0;
             border-radius: 10px;
         }
 
-        /* Poistaa linkin alaviivat */
         .button-container a {
             text-decoration: none;
         }
@@ -74,42 +64,55 @@
         img {
             width: 350px;
             height: auto;
-            margin-top: 20px;  /* Lisää tilaa kuvan ja painikkeiden väliin */
-             box-shadow: 0 0 35px 5px rgba(255, 215, 0, 0.8); /* Kultainen hehkuvarjo */
+            margin-top: 20px;
+            box-shadow: 0 0 35px 5px rgba(255, 215, 0, 0.8);
         }
+
+        /* Kuvien painike-tyyli */
+        .image-button {
+            width: 300px;
+            height: 50px;
+            border-radius: 50px;
+            box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.8);
+            margin: 10px;
+            opacity: 0.8;
+            object-fit: cover;
+        }
+
+        .image-button:hover {
+            opacity: 1;
+        }
+
     </style>
 </head>
-<body> 
+<body>
 
 <h1>Tervetuloa P-kiekolle!</h1>
 
 <!-- Kuvan lisääminen -->
 <p>Kake Randelin Hitit</p>
-<img src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/refs/heads/main/kuvat/Kake%20Randelin.jfif">
+<img src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/refs/heads/main/kuvat/Kake%20Randelin.jfif" alt="Kake Randelin Hitit">
 
 <h1>Valitse alustasi:</h1>
 
 <!-- Painikkeet ja linkit -->
 <div class="my-button-container">
-    <!-- Painike 1: HURRIH -->
+    <!-- Painikkeet -->
     <a href="https://open.spotify.com/album/66rQzTqQm0vPJOLD5YveAA">
         <button class="my-button">Spotify</button>
     </a>
 
-    <!-- Painike 2: YOUTUBE -->
     <a href="https://www.youtube.com/playlist?list=PL9RFH1XmLdxP99dh7NEyfkgNWM8AICs0w">
         <button class="my-button">YouTube</button>
     </a>
 
-    <!-- Painike 3: POPTORI OY -->
     <a href="https://www.poptori.fi/">
         <button class="my-button">Poptori Oy</button>
     </a>
 
-    <!-- Omat linkit, ei klikattavaa -->
-    <button class="my-button" disabled>Oma palvelin...</button>
-    <button class="my-button" disabled>Mainostaja 2</button>
-  
+    <!-- Kuvapainikkeet korvaavat "Oma palvelin" ja "Mainostaja 2" -->
+    <img src="https://your-image-url.com/oma_palvelin.jpg" alt="Oma palvelin" class="image-button">
+    <img src="https://your-image-url.com/mainostaja2.jpg" alt="Mainostaja 2" class="image-button">
 </div>
 
 </body>
