@@ -77,12 +77,12 @@
             margin: 10px;
             opacity: 0.8;
             object-fit: cover;
+            cursor: pointer;
         }
 
         .image-button:hover {
             opacity: 1;
         }
-
     </style>
 </head>
 <body>
@@ -97,7 +97,7 @@
 
 <!-- Painikkeet ja linkit -->
 <div class="my-button-container">
-    <!-- Painikkeet -->
+    <!-- Tekstipainikkeet -->
     <a href="https://open.spotify.com/album/66rQzTqQm0vPJOLD5YveAA">
         <button class="my-button">Spotify</button>
     </a>
@@ -111,13 +111,15 @@
     </a>
 
     <!-- Kuvapainikkeet korvaavat "Oma palvelin" ja "Mainostaja 2" -->
-    
- <img src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/main/kuvat/Riipisen_logo_riipisen.jfif" 
-     alt="Oma palvelin" 
-     class="image-button" 
-     onclick="window.location.href='https://www.riipisen.fi/'">    
+    <a href="https://www.riipisen.fi/" target="_blank">
+        <img src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/main/kuvat/Riipisen_logo_riipisen.jfif" 
+             alt="Oma palvelin" 
+             class="image-button">
+    </a>
 
-    <img src="https://your-image-url.com/mainostaja2.jpg" alt="Mainostaja 2" class="image-button">
+    <a href="https://your-link-for-mainostaja2.com" target="_blank">
+        <img src="https://your-image-url.com/mainostaja2.jpg" alt="Mainostaja 2" class="image-button">
+    </a>
 </div>
 
 </body>
