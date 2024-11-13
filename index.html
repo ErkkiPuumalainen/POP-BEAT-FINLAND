@@ -72,8 +72,8 @@
         .image-button {
             width: 100%; /* Kuvan leveys täyttää containerin leveyden */
             height: auto; /* Kuvan korkeus automaattisesti suhteessa leveys */
-            max-width: 350px; /* Maksimileveys */
-            max-height: 100px; /* Maksimikorkeus */
+            max-width: 300px; /* Maksimileveys */
+            max-height: 50px; /* Maksimikorkeus */
             border-radius: 50px;
             box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.8);
             margin: 10px;
@@ -85,6 +85,23 @@
         .image-button:hover {
             opacity: 1;
         }
+
+        /* Erillinen tyyli Riipisen kuvapainikkeelle */
+        .riipisen-button {
+            width: 100%; /* Kuvan leveys täyttää containerin leveyden */
+            max-width: 500px; /* Maksimileveys suurennettu */
+            max-height: 150px; /* Maksimikorkeus suurennettu */
+            margin: 20px;
+            border-radius: 50px;
+            box-shadow: 0 0 15px 2px rgba(255, 215, 0, 0.8); /* Tummempi varjo */
+            opacity: 0.9;
+            object-fit: contain;
+        }
+
+        .riipisen-button:hover {
+            opacity: 1;
+        }
+
     </style>
 </head>
 <body>
@@ -116,7 +133,7 @@
     <a href="https://www.riipisen.fi/" target="_blank">
         <img src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/main/kuvat/Riipisen_logo_riipisen.jfif" 
              alt="Oma palvelin" 
-             class="image-button">
+             class="riipisen-button"> <!-- Tässä käytetään uutta "riipisen-button" tyyliä -->
     </a>
 
     <a href="https://your-link-for-mainostaja2.com" target="_blank">
