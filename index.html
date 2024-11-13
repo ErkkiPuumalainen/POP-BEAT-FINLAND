@@ -92,7 +92,8 @@
             max-width: 700px; /* Maksimileveys suurennettu */
             max-height: 150px; /* Maksimikorkeus suurennettu */
             margin: 20px;
-            border-radius: 0px;
+            border-radius: 15px; /* Pyöristetyt kulmat */
+            border: 5px solid #FFD700; /* Kultainen kehys */
             box-shadow: 0 0 15px 2px rgba(255, 215, 0, 0.8); /* Tummempi varjo */
             opacity: 0.9;
             object-fit: contain;
@@ -100,6 +101,20 @@
 
         .riipisen-button:hover {
             opacity: 1;
+            box-shadow: 0 0 20px 3px rgba(255, 215, 0, 1); /* Voimakkaampi varjo hover-tilassa */
+        }
+
+        /* Teboil-kuvan tyyli */
+        .teboil-button {
+            border: 5px solid #FFD700; /* Kultainen kehys */
+            border-radius: 15px; /* Pyöristetyt kulmat */
+            box-shadow: 0 0 15px 2px rgba(255, 215, 0, 0.8); /* Kultainen varjo */
+            opacity: 0.9;
+        }
+
+        .teboil-button:hover {
+            opacity: 1;
+            box-shadow: 0 0 20px 3px rgba(255, 215, 0, 1); /* Voimakkaampi varjo hover-tilassa */
         }
 
     </style>
@@ -121,28 +136,4 @@
         <button class="my-button">Spotify</button>
     </a>
 
-    <a href="https://www.youtube.com/playlist?list=PL9RFH1XmLdxP99dh7NEyfkgNWM8AICs0w">
-        <button class="my-button">YouTube</button>
-    </a>
-
-    <a href="https://www.poptori.fi/">
-        <button class="my-button">Poptori Oy</button>
-    </a>
-<p>POHJOISEN SUOMEN PARASTA PALVELUA</p>
-    <!-- Kuvapainikkeet -->
-    <a href="https://www.riipisen.fi/" target="_blank">
-        <img src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/main/kuvat/Riipisen_logo_riipisen.jfif" 
-             alt="Oma palvelin" 
-             class="riipisen-button"> <!-- Tässä käytetään uutta "riipisen-button" tyyliä -->
-    </a>
-
- <a href="https://www.teboil.fi/asemaverkosto/suomussalmi/suomussalmi-turjanhovi/lounaslista-turjanhovi/" target="_blank">
-    <img src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/main/kuvat/teboil-logo.webp" 
-         alt="Teboil Turjanhovi" class="image-button">
-<p>SUOMUSSALMI / TURJANHOVI</p>
-</a>
-
-</div>
-
-</body>
-</html>
+    <a href="https://www.youtube.com/playlist?
