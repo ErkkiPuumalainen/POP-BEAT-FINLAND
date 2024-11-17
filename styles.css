@@ -11,7 +11,7 @@ html, body {
     min-height: 100%; /* Varmistaa taustakuvan peittävyyden */
     color: white; /* Teksti valkoiseksi */
     overflow-x: hidden; /* Estää vaakaskrollauksen */
-    border: 10px solid #00bfff; /* Sähkönsininen kehys */
+    border: 10px solid #0404B4; /* Sähkönsininen kehys */
     box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8); /* Valkoinen varjo */
 }
 
@@ -41,12 +41,13 @@ ul li {
 /* Linkkien tyylit */
 a {
     display: inline-block; /* Painikkeen tyyli */
-    background-color: #00bfff; /* Sähkönsininen tausta */
+    background-color: ;/* Sähkönsininen tausta */
     color: white; /* Valkoinen teksti */
     padding: 10px 20px;
     text-decoration: none;
+    border: 10px solid #0404B4;
     border-radius: 5px;
-    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.8); /* Sisäpuolen valkoinen hohde */
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 1.8); /* Sisäpuolen valkoinen hohde */
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
