@@ -35,7 +35,11 @@ ul {
     padding: 0;
     margin: 20px 0;
     text-align: center; /* Keskittääluettelon */
-
+    display: flex;
+    flex-direction: column; /* Asettaa linkit pystysuoraan */
+    justify-content: center; /* Keskittää linkit pystysuunnassa */
+    align-items: center; /* Keskittää linkit vaakasuunnassa */
+    height: 100vh; /* Täyttää koko näytön korkeuden */
 }
 
 
