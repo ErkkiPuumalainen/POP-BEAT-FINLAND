@@ -4,7 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image:./kuvat/TERAS.jpg 
+    background-image:/kuvat/TERAS.jpg 
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; /* Kiinteä tausta skrollauksen mukana */
@@ -46,6 +46,7 @@ ul li {
 /* Linkkien tyylit */
 a {
     display: inline-block; /* Painikkeen tyyli */
+    position: center;
     background-color: ;/* Sähkönsininen tausta */
     color: white; /* Valkoinen teksti */
     padding: 0px 0px;
