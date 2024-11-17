@@ -1,50 +1,76 @@
-<!DOCTYPE html>
-<html lang="fi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Korttimalli</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Korttimallit!</h1>
-    <ul>
-        <!-- Pop-kategoria -->
-        <li>
-            <h2>Pop!</h2>
-            <ul>
-                <li><a href="tuotteet/Kake.html">Kake</a></li>
-            </ul>
-        </li>
+/* Yleiset tyylit */
+html, body {
+    height: 100%;  /* Varmistaa, että html ja body täyttävät koko näytön korkeuden */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        <!-- Joulu-kategoria -->
-        <li>
-            <h2>Joulu!</h2>
-            <ul>
-                <li><a href="tuotteet/Pukkitumma.html">Pukki, tumma</a></li>
-                <li><a href="tuotteet/Pukkivaalea.html">Pukki, vaalea</a></li>
-                <li><a href="tuotteet/PukkiIstuuPihaTumma.html">Pukki istuu piha, tumma</a></li>
-                <li><a href="tuotteet/Suojelusenkeli.html">Suojelusenkeli</a></li>
-            </ul>
-        </li>
+body {
+    background-image: url('kuvat/TERAS.jpg'); 
+    background-size: cover;  /* Tausta venyy koko alueelle */
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Poppins, sans-serif;
+    border: 10px solid #00bfff;  /* Sähkön sininen kehys */
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8);  /* Valkoinen varjo kehys ympärille */
+    overflow: hidden;  /* Estää sisällön menemisen ulos */
+    min-height: 100vh; /* Varmistaa, että kehys täyttää koko näytön korkeuden */
+}
 
-        <!-- Historia-kategoria -->
-        <li>
-            <h2>Historia!</h2>
-            <ul>
-                <li><a href="tuotteet/HimmetäEi.html">Himmetä ei</a></li>
-                <li><a href="tuotteet/SuomenPuolesta.html">Suomen puolesta</a></li>
-            </ul>
-        </li>
+/* Otsikko */
+h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Varjostus */
+    margin-top: 20px; /* Varmistaa, että otsikko ei mene reunan yli */
+}
 
-        <!-- BtoB-kategoria -->
-        <li>
-            <h2>BtoB!</h2>
-            <ul>
-                <li><a href="tuotteet/OhiOn347.html">Ohi On 347</a></li>
-                <li><a href="tuotteet/Outokumpu.html">Outokumpu</a></li>
-            </ul>
-        </li>
-    </ul>
-</body>
-</html>
+/* Yleinen kontaineri */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Media Queries - responsiivisuus */
+
+/* Pienille laitteille, kuten matkapuhelimille */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Vähentää reunoja mobiililaitteilla */
+        border-width: 5px; /* Vähentää reunan paksuutta mobiililaitteilla */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Pienentää otsikon kokoa mobiililaitteilla */
+    }
+
+    /* Pienentää luetteloiden vasenta marginaalia */
+    ul {
+        padding-left: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em; /* Pienentää alaotsikoiden kokoa mobiililaitteilla */
+    }
+}
+
+/* Keskikokoiset laitteet, kuten tabletit */
+@media (max-width: 1024px) {
+    body {
+        padding: 20px; /* Lisää tilaa tabletilla */
+    }
+
+    h1 {
+        font-size: 2em; /* Pienentää otsikon kokoa, mutta ei liian pieneksi */
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    h2 {
+        font-size: 1.5em; /* Pienentää alaotsikoiden kokoa tableteilla */
+    }
+}
