@@ -7,15 +7,7 @@
 </head>
 <body>
     <h1>Korttimallit!</h1>
-
-<ul>
-  {% for page in site.pages %}
-    {% if page.path contains 'tuotteet/' %}
-      <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
-    <ul>
+ <ul>
         <!-- Pop-kategoria -->
         <li>
             <h2>Pop!</h2>
