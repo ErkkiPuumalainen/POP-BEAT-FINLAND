@@ -1,7 +1,6 @@
-title: Tuotteet
-description: Etusivu
-theme: jekyll-theme-tactile
+title: POP BEAT FINLAND
+description: Tuotteiden esittely
+theme: jekyll-theme-tactile # Voit vaihtaa teeman
 show_downloads: true
-show_explore: false
-baseurl: "" # Lisää repositorion polku, jos se ei ole juurikansiossa
-url: "https://github.com/ErkkiPuumalainen/POP-BEAT-FINLAND" # Korvaa omalla GitHub Pages -URL-osoitteellasi
+baseurl: "" # Jos projekti ei ole suoraan juurikansiossa, lisää sen nimi tähän
+url: "https://erkkipuumalainen.github.io"
