@@ -4,7 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('kuvat/TERAS.jpg'); 
+    background-image:./kuvat/TERAS.jpg 
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; /* Kiinteä tausta skrollauksen mukana */
