@@ -32,6 +32,15 @@ h1 {
     margin: 0 auto;
     padding: 20px;
 }
+ul {
+    display: flex; /* Aktivoi flexbox-asettelun */
+    flex-wrap: wrap; /* Salli rivinvaihdot, jos kohteet eivät mahdu yhdelle riville */
+    justify-content: center; /* Keskittää kohteet vaakasuunnassa */
+    gap: 20px; /* Lisää väliä kohteiden välille */
+    list-style-type: none; /* Poistaa luettelomerkit */
+    padding: 0; /* Poistaa ylimääräisen sisennyksen */
+    margin: 0 auto; /* Keskittää koko luettelon */
+}
 a {
     display: inline-block; /* Tekee linkistä lohkoelementin, joka käyttäytyy kuin painike */
   
