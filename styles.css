@@ -8,8 +8,9 @@ body {
 }
 
 h1 {
-   color: #616161;
-   text-aling: center;
+   color: white;
+   text-align: center;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0,5);/*varjostus
    
 }
 
