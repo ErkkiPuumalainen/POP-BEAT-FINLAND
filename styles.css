@@ -8,22 +8,24 @@ html, body {
     background-position: center; 
     background-attachment: fixed; /* Kiinteä tausta skrollauksen mukana */
     font-family: Poppins, sans-serif;
-    min-height: 100%; /* Varmistaa taustakuvan peittävyyden */
+    min-height: 100vh; /* Varmistaa taustakuvan peittävyyden */
     color: white; /* Teksti valkoiseksi */
     overflow-x: hidden; /* Estää vaakaskrollauksen */
-    border: 10px solid #0404B4; /* Sähkönsininen kehys */
+    border: 2px solid #0404B4; /* Sähkönsininen kehys */
     box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8); /* Valkoinen varjo */
 }
 
 /* Otsikko */
 h1, h2 {
-    width: 50%; /* Koko näytön leveys */
+    width: 100%; /* Koko näytön leveys */
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Varjostus */
-    margin: 20px 0;
-    padding: 10px 0;
-    background-color: rgba(0, 191, 255, 0.5); /* Sähkönsininen tausta läpinäkyvyydellä */
-    border-radius: 5px; /* Hieman pyöristetyt reunat */
+    text-shadow: 4px 4px 8px rgb(9 30 2); /* Varjostus */
+    margin: px 0;
+    padding: px 0;
+    border-bottom: 3px solid rgba(255, 255, 255, 1.8)f;
+    
+    /* Sähkönsininen tausta läpinäkyvyydellä */
+    border-radius: 50px; /* Hieman pyöristetyt reunat */
 }
 
 /* Luetteloiden tyylit */
@@ -31,11 +33,13 @@ ul {
     list-style-type: none; /* Poistaa luettelomerkit */
     padding: 0;
     margin: 20px 0;
-    text-align: center; /* Keskittää luettelon */
+    text-align: center; /* Keskittääluettelon */
+
 }
 
+
 ul li {
-    margin-bottom: 15px; /* Väli luettelokohtien välillä */
+    margin-bottom: 8px; /* Väli luettelokohtien välillä */
 }
 
 /* Linkkien tyylit */
@@ -43,9 +47,9 @@ a {
     display: inline-block; /* Painikkeen tyyli */
     background-color: ;/* Sähkönsininen tausta */
     color: white; /* Valkoinen teksti */
-    padding: 10px 20px;
+    padding: 1px 20px;
     text-decoration: none;
-    border: 10px solid #0404B4;
+    border: 2px solid #0404B4;
     border-radius: 5px;
     box-shadow: inset 0 0 10px rgba(255, 255, 255, 1.8); /* Sisäpuolen valkoinen hohde */
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
@@ -53,9 +57,9 @@ a {
 
 /* Hover-efekti */
 a:hover {
-    background-color: #0099cc;
+    background-color: #9bab056b;
     transform: translateY(-3px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 15px rgb(183 190 120);
 }
 
 /* Media Queries - responsiivisuus */
