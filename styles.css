@@ -32,8 +32,8 @@ h1, h2 {
 ul {
     list-style-type: none; /* Poistaa luettelomerkit */
     padding: 0;
-    margin: 20px 0;
-    text-align: center; /* Keskittääluettelon */
+    margin: -20px 0;
+
 
 }
 
