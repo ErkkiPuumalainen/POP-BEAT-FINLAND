@@ -1,81 +1,36 @@
-@@ -1,78 +1,86 @@
 /* Yleiset tyylit */
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url('./kuvat/TERAS.jpg'); 
     background-image: url('kuvat/TERAS.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; /* Kiinteä tausta skrollauksen mukana */
-    font-family: Poppins, sans-serif;
-    min-height: 100vh; /* Varmistaa taustakuvan peittävyyden */
-    color: white; /* Teksti valkoiseksi */
-    overflow-x: hidden; /* Estää vaakaskrollauksen */
-    border: 2px solid #0404B4; /* Sähkönsininen kehys */
-    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8); /* Valkoinen varjo */
-}
-
-/* Otsikko */
-h1, h2 {
-    width: 100%; /* Koko näytön leveys */
-    text-align: center;
-    text-shadow: 4px 4px 8px rgb(9 30 2); /* Varjostus */
-    margin: px 0;
-    padding: px 0;
-    border-bottom: 3px solid rgba(255, 255, 255, 1.8)f;
-
-    /* Sähkönsininen tausta läpinäkyvyydellä */
-    border-radius: 50px; /* Hieman pyöristetyt reunat */
-}
-
-/* Luetteloiden tyylit */
-ul {
-    list-style-type: none; /* Poistaa luettelomerkit */
-    padding: 0;
-    margin: 20px 0;
-    text-align: center; /* Keskittääluettelon */
-
-}
-
-
-ul li {
-    margin-bottom: 8px; /* Väli luettelokohtien välillä */
-}
-
-/* Linkkien tyylit */
+@@ -46,33 +46,33 @@
 a {
     display: inline-block; /* Painikkeen tyyli */
     background-color: ;/* Sähkönsininen tausta */
+    color: white; /* Valkoinen teksti */
+    padding: 1px 20px;
      /* Valkoinen teksti */
     padding: px px;
     text-decoration: none;
+    border: 2px solid #0404B4;
     border: px solid #0404B4;
     border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 1.8); /* Sisäpuolen valkoinen hohde */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
     box-shadow: inset 0 0 10x rgba(255, 255, 255, 1.8); /* Sisäpuolen valkoinen hohde */
     transition: background-color 0.s, box-shadow 0.s, transform 0.s;
-   a {
-    display: inline-block; /* Muuttaa linkit painikkeen muotoon */
-    text-align: center; /* Keskittää sisällön linkissä */
-    background-color: #003366; /* Esimerkki taustaväri */
-    color: white; /* Teksti valkoiseksi */
-    padding: 10px 20px; /* Sisätilaa */
-    text-decoration: none; /* Poistaa linkin alaviivan */
-    border-radius: 8px; /* Pyöristetyt kulmat */
-    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
+
 /* Hover-efekti */
 a:hover {
     background-color: #9bab056b;
     transform: translateY(-3px);
     box-shadow: 0 15px 15px rgb(183 190 120);
-}
-}
-
-/* Hover-efekti */
-a:hover {
-    background-color: #9bab056b;
-    transform: translateY(-3px);
     box-shadow: 0 1px 1px rgb(183 190 120);
 }
 
