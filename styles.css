@@ -1,117 +1,74 @@
 /* Yleiset tyylit */
 html, body {
-    height: 100%; /* Varmistaa, että body täyttää koko ruudun korkeuden */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     background-image: url('kuvat/TERAS.jpg'); 
     background-size: cover; 
     background-position: center; 
-    background-repeat: no-repeat; 
+    background-attachment: fixed; /* Kiinteä tausta */
     font-family: Poppins, sans-serif;
-    height: 100%; /* Taustan korkeus täyttää koko näytön */
-    border: 4px solid 	#000080; /* Sähkön sininen kehys */
-    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.8); /* Valkoinen varjo kehys ympärille */
-    overflow: auto; /* Estää sisällön menemisen ulos */
+    min-height: 100%; /* Varmistaa taustakuvan peittävyyden */
+    color: white; /* Teksti valkoiseksi */
+    overflow-x: hidden; /* Estää vaakaskrollauksen */
+    border: 10px solid #00bfff; /* Sähkönsininen kehys */
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8); /* Valkoinen varjo */
 }
 
 /* Otsikko */
-h1 {
-    color: white;
+h1, h2 {
+    width: 100%; /* Koko näytön leveys */
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* varjostus */
-    margin-top: 20px; /* Varmistaa, että otsikko ei mene reunan yli */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Varjostus */
+    margin: 20px 0;
+    padding: 10px 0;
+    background-color: rgba(0, 191, 255, 0.5); /* Sähkönsininen tausta läpinäkyvyydellä */
+    border-radius: 5px; /* Hieman pyöristetyt reunat */
 }
-h2 {
-    color: white;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* varjostus */
-    margin-top: 20px; /* Varmistaa, että otsikko ei mene reunan yli */
-}
-/* Yleinen kontaineri */
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-}
+
+/* Luetteloiden tyylit */
 ul {
-    display: flex; /* Aktivoi flexbox-asettelun */
-    flex-wrap: wrap; /* Salli rivinvaihdot, jos kohteet eivät mahdu yhdelle riville */
-    justify-content: center; /* Keskittää kohteet vaakasuunnassa */
-    gap: 20px; /* Lisää väliä kohteiden välille */
     list-style-type: none; /* Poistaa luettelomerkit */
-    padding: 0; /* Poistaa ylimääräisen sisennyksen */
-    margin: 0 auto; /* Keskittää koko luettelon */
+    padding: 0;
+    margin: 0 0 20px;
 }
+
+ul li {
+    margin-bottom: 10px; /* Väli linkkien välillä */
+}
+
+ul li ul {
+    margin-top: 10px; /* Väli yläotsikon ja listan välillä */
+    padding-left: 20px; /* Siirretään alaluetteloa hieman */
+}
+
+/* Linkkien tyylit */
 a {
-    display: inline-block; /* Tekee linkistä lohkoelementin, joka käyttäytyy kuin painike */
-  
+    display: inline-block; /* Painikkeen tyyli */
+    background-color: #00bfff; /* Sähkönsininen tausta */
     color: white; /* Valkoinen teksti */
-    padding: 20px 30px; /* Sisäiset marginaalit (tilaa painikkeen ympärille) */
-    text-align: center; /* Teksti keskitettynä */
-    font-size: 1.2em; /* Tekstin koko */
-    border-radius: 5px; /* Pyöristetyt kulmat */
-    text-decoration: none; /* Poistaa alleviivauksen */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Pieni varjo painikkeelle */
-    transition: background-color 0.3s, transform 0.3s; /* Siirtymäefekti hover-tilassa */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.8); /* Sisäpuolen valkoinen hohde */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
-/* Linkkien hover-tilan väri ja animointi */
+/* Hover-efekti */
 a:hover {
-    background-color: #0099cc; /* Tummempi sähkönsininen hover-tilassa */
-    transform: translateY(-2px); /* Nostaa painiketta hover-tilassa */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Lisää varjon terävyyttä hover-tilassa */
-}
-
-/* Linkkien aktiivinen tila (kun klikkaat) */
-a:active {
-    background-color: #0077b3; /* Tumman sähkönsininen väri, kun painike on aktiivinen */
-    transform: translateY(0); /* Palauttaa painikkeen normaaliksi, kun se on klikattu */
+    background-color: #0099cc;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Media Queries - responsiivisuus */
-
-/* Pienille laitteille, kuten matkapuhelimille */
 @media (max-width: 768px) {
-    body {
-        padding: 10px; /* Vähentää reunoja mobiililaitteilla */
-        border-width: 5px; /* Vähentää reunan paksuutta mobiililaitteilla */
-        height: 100vh; /* Varmistaa, että tausta täyttää koko näytön korkeuden */
+    h1, h2 {
+        font-size: 1.5em; /* Pienennetään otsikoita mobiililla */
     }
 
-    h1 {
-        font-size: 1.5em; /* Pienentää otsikon kokoa mobiililaitteilla */
-    }
-
-    /* Pienentää luetteloiden vasenta marginaalia */
-    ul {
-        padding-left: 10px;
-    }
-
-    h2 {
-        font-size: 1.2em; /* Pienentää alaotsikoiden kokoa mobiililaitteilla */
-    }
-}
-
-/* Keskikokoiset laitteet, kuten tabletit */
-@media (max-width: 1024px) {
-    body {
-        padding: 20px; /* Lisää tilaa tabletilla */
-        height: 100vh; /* Varmistaa, että tausta täyttää koko näytön korkeuden */
-    }
-
-    h1 {
-        font-size: 2em; /* Pienentää otsikon kokoa, mutta ei liian pieneksi */
-    }
-
-    ul {
-        padding-left: 20px;
-    }
-
-    h2 {
-        font-size: 1.5em; /* Pienentää alaotsikoiden kokoa tableteilla */
+    a {
+        width: 100%; /* Linkit täyttävät leveyden mobiililla */
+        text-align: center;
     }
 }
