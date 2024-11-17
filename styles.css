@@ -36,7 +36,7 @@ a {
     display: inline-block; /* Tekee linkistä lohkoelementin, joka käyttäytyy kuin painike */
     background-color: #000080; /* Sähkönsininen tausta */
     color: white; /* Valkoinen teksti */
-    padding: 10px 20px; /* Sisäiset marginaalit (tilaa painikkeen ympärille) */
+    padding: 15px 30px; /* Sisäiset marginaalit (tilaa painikkeen ympärille) */
     text-align: center; /* Teksti keskitettynä */
     font-size: 1.2em; /* Tekstin koko */
     border-radius: 5px; /* Pyöristetyt kulmat */
