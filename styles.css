@@ -6,7 +6,7 @@ html, body {
     background-image: url('kuvat/TERAS.jpg'); 
     background-size: cover; 
     background-position: center; 
-    background-attachment: fixed; /* Kiinteä tausta */
+    background-attachment: fixed; /* Kiinteä tausta skrollauksen mukana */
     font-family: Poppins, sans-serif;
     min-height: 100%; /* Varmistaa taustakuvan peittävyyden */
     color: white; /* Teksti valkoiseksi */
@@ -30,16 +30,12 @@ h1, h2 {
 ul {
     list-style-type: none; /* Poistaa luettelomerkit */
     padding: 0;
-    margin: 0 0 20px;
+    margin: 20px 0;
+    text-align: center; /* Keskittää luettelon */
 }
 
 ul li {
-    margin-bottom: 10px; /* Väli linkkien välillä */
-}
-
-ul li ul {
-    margin-top: 10px; /* Väli yläotsikon ja listan välillä */
-    padding-left: 20px; /* Siirretään alaluetteloa hieman */
+    margin-bottom: 15px; /* Väli luettelokohtien välillä */
 }
 
 /* Linkkien tyylit */
@@ -68,7 +64,10 @@ a:hover {
     }
 
     a {
-        width: 100%; /* Linkit täyttävät leveyden mobiililla */
-        text-align: center;
+        width: 90%; /* Linkit täyttävät melkein koko mobiilinäytön leveyden */
+    }
+
+    ul {
+        padding: 0 10px; /* Lisätään tilaa mobiililaitteilla */
     }
 }
