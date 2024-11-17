@@ -1,26 +1,68 @@
+/* Yleiset tyylit */
 body {
-   
     background-image: url('kuvat/TERAS.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
     font-family: Poppins, sans-serif;
     margin: 0;
-padding: 0;
-   box-sizing: border-box;
- border: 10px solid #00bfff; /* Sähkön sininen kehys */
-  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8); /* Valkoinen varjo kehys ympärille */
-   
+    padding: 0;
+    box-sizing: border-box;
+    border: 10px solid #00bfff; /* Sähkön sininen kehys */
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8); /* Valkoinen varjo kehys ympärille */
 }
 
+/* Otsikko */
 h1 {
-   color: white;
-   text-align: center;
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);/*varjostus
-   
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* varjostus */
 }
 
+/* Yleinen kontaineri */
 .container {
     max-width: 960px;
     margin: 0 auto;
+}
+
+/* Media Queries - responsiivisuus */
+
+/* Pienille laitteille, kuten matkapuhelimille */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Vähentää reunoja mobiililaitteilla */
+        border-width: 5px; /* Vähentää reunan paksuutta mobiililaitteilla */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Pienentää otsikon kokoa mobiililaitteilla */
+    }
+
+    /* Pienentää luetteloiden vasenta marginaalia */
+    ul {
+        padding-left: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em; /* Pienentää alaotsikoiden kokoa mobiililaitteilla */
+    }
+}
+
+/* Keskikokoiset laitteet, kuten tabletit */
+@media (max-width: 1024px) {
+    body {
+        padding: 20px; /* Lisää tilaa tabletilla */
+    }
+
+    h1 {
+        font-size: 2em; /* Pienentää otsikon kokoa, mutta ei liian pieneksi */
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    h2 {
+        font-size: 1.5em; /* Pienentää alaotsikoiden kokoa tableteilla */
+    }
 }
