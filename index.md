@@ -9,15 +9,6 @@ Tässä on esittely POP BEAT FINLAND -tuotteistamme.
 
 ## Korttimallit
 
-<ul>
-  <!-- Dynaaminen lista kaikista tuotesivujen linkeistä -->
-  {% for page in site.pages %}
-    {% if page.path contains 'tuotteet/' %}
-      <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
-
 ## Tuotekategoriat
 
 <ul>
