@@ -34,7 +34,7 @@ h1 {
 }
 a {
     display: inline-block; /* Tekee linkistä lohkoelementin, joka käyttäytyy kuin painike */
-    background-color: #00bfff; /* Sähkönsininen tausta */
+    background-color: #000080; /* Sähkönsininen tausta */
     color: white; /* Valkoinen teksti */
     padding: 10px 20px; /* Sisäiset marginaalit (tilaa painikkeen ympärille) */
     text-align: center; /* Teksti keskitettynä */
