@@ -25,7 +25,12 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* varjostus */
     margin-top: 20px; /* Varmistaa, että otsikko ei mene reunan yli */
 }
-
+h2 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* varjostus */
+    margin-top: 20px; /* Varmistaa, että otsikko ei mene reunan yli */
+}
 /* Yleinen kontaineri */
 .container {
     max-width: 960px;
