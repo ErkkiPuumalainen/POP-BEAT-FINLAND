@@ -3,7 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('./kuvat/TERAS.jpg'); 
+    background-image: url('kuvat/TERAS.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; /* Kiinteä tausta skrollauksen mukana */
@@ -46,20 +46,20 @@ ul li {
 a {
     display: inline-block; /* Painikkeen tyyli */
     background-color: ;/* Sähkönsininen tausta */
-    color: white; /* Valkoinen teksti */
-    padding: 1px 20px;
+     /* Valkoinen teksti */
+    padding: px px;
     text-decoration: none;
-    border: 2px solid #0404B4;
+    border: px solid #0404B4;
     border-radius: 5px;
-    box-shadow: inset 0 0 10px rgba(255, 255, 255, 1.8); /* Sisäpuolen valkoinen hohde */
-    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: inset 0 0 10x rgba(255, 255, 255, 1.8); /* Sisäpuolen valkoinen hohde */
+    transition: background-color 0.s, box-shadow 0.s, transform 0.s;
 }
 
 /* Hover-efekti */
 a:hover {
     background-color: #9bab056b;
     transform: translateY(-3px);
-    box-shadow: 0 15px 15px rgb(183 190 120);
+    box-shadow: 0 1px 1px rgb(183 190 120);
 }
 
 /* Media Queries - responsiivisuus */
