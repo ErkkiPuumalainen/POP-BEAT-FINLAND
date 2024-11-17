@@ -48,7 +48,7 @@ a {
     display: inline-block; /* Painikkeen tyyli */
     background-color: ;/* Sähkönsininen tausta */
     color: white; /* Valkoinen teksti */
-    padding: px px;
+    padding: 0px 0px;
     text-decoration: none;
     border: px solid ;
     border-radius: px;
