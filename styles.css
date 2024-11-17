@@ -32,6 +32,31 @@ h1 {
     margin: 0 auto;
     padding: 20px;
 }
+a {
+    display: inline-block; /* Tekee linkistä lohkoelementin, joka käyttäytyy kuin painike */
+    background-color: #00bfff; /* Sähkönsininen tausta */
+    color: white; /* Valkoinen teksti */
+    padding: 10px 20px; /* Sisäiset marginaalit (tilaa painikkeen ympärille) */
+    text-align: center; /* Teksti keskitettynä */
+    font-size: 1.2em; /* Tekstin koko */
+    border-radius: 5px; /* Pyöristetyt kulmat */
+    text-decoration: none; /* Poistaa alleviivauksen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Pieni varjo painikkeelle */
+    transition: background-color 0.3s, transform 0.3s; /* Siirtymäefekti hover-tilassa */
+}
+
+/* Linkkien hover-tilan väri ja animointi */
+a:hover {
+    background-color: #0099cc; /* Tummempi sähkönsininen hover-tilassa */
+    transform: translateY(-2px); /* Nostaa painiketta hover-tilassa */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Lisää varjon terävyyttä hover-tilassa */
+}
+
+/* Linkkien aktiivinen tila (kun klikkaat) */
+a:active {
+    background-color: #0077b3; /* Tumman sähkönsininen väri, kun painike on aktiivinen */
+    transform: translateY(0); /* Palauttaa painikkeen normaaliksi, kun se on klikattu */
+}
 
 /* Media Queries - responsiivisuus */
 
