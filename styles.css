@@ -6,12 +6,12 @@ html, body {
     background-image: url('kuvat/TERAS.jpg'); 
     background-size: cover; 
     background-position: center; 
-    background-attachment: fixed; /* Kiinteä tausta skrollauksen mukana */
+    background-attachment: fixed; /* Kiinteä tausta */
     font-family: Poppins, sans-serif;
-    min-height: 100vh; /* Varmistaa taustakuvan peittävyyden */
+    min-height: 100%; /* Varmistaa taustakuvan peittävyyden */
     color: white; /* Teksti valkoiseksi */
     overflow-x: hidden; /* Estää vaakaskrollauksen */
-    border: 2px solid #0404B4; /* Sähkönsininen kehys */
+    border: 10px solid #00bfff; /* Sähkönsininen kehys */
     box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8); /* Valkoinen varjo */
 }
 
@@ -19,55 +19,46 @@ html, body {
 h1, h2 {
     width: 100%; /* Koko näytön leveys */
     text-align: center;
-    text-shadow: 4px 4px 8px rgb(9 30 2); /* Varjostus */
-    margin: px 0;
-    padding: px 0;
-    border-bottom: 3px solid rgba(255, 255, 255, 1.8)f;
-    
-    /* Sähkönsininen tausta läpinäkyvyydellä */
-    border-radius: 50px; /* Hieman pyöristetyt reunat */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Varjostus */
+    margin: 20px 0;
+    padding: 10px 0;
+    background-color: rgba(0, 191, 255, 0.5); /* Sähkönsininen tausta läpinäkyvyydellä */
+    border-radius: 5px; /* Hieman pyöristetyt reunat */
 }
 
 /* Luetteloiden tyylit */
 ul {
     list-style-type: none; /* Poistaa luettelomerkit */
     padding: 0;
-    margin: 20px 0;
-    text-align: center; /* Keskittääluettelon */
-
+    margin: 0 0 20px;
 }
 
-
 ul li {
-    margin-bottom: 8px; /* Väli luettelokohtien välillä */
+    margin-bottom: 10px; /* Väli linkkien välillä */
+}
+
+ul li ul {
+    margin-top: 10px; /* Väli yläotsikon ja listan välillä */
+    padding-left: 20px; /* Siirretään alaluetteloa hieman */
 }
 
 /* Linkkien tyylit */
 a {
-   a {
-    display: inline-block; /* Muuttaa linkit painikkeen muotoon */
-    text-align: center; /* Keskittää sisällön linkissä */
-    background-color: #003366; /* Esimerkki taustaväri */
-    color: white; /* Teksti valkoiseksi */
-    padding: 10px 20px; /* Sisätilaa */
-    text-decoration: none; /* Poistaa linkin alaviivan */
-    border-radius: 8px; /* Pyöristetyt kulmat */
+    display: inline-block; /* Painikkeen tyyli */
+    background-color: #00bfff; /* Sähkönsininen tausta */
+    color: white; /* Valkoinen teksti */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.8); /* Sisäpuolen valkoinen hohde */
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
 /* Hover-efekti */
 a:hover {
-    background-color: #9bab056b;
+    background-color: #0099cc;
     transform: translateY(-3px);
-    box-shadow: 0 15px 15px rgb(183 190 120);
-}
-}
-
-/* Hover-efekti */
-a:hover {
-    background-color: #9bab056b;
-    transform: translateY(-3px);
-    box-shadow: 0 1px 1px rgb(183 190 120);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Media Queries - responsiivisuus */
@@ -77,10 +68,7 @@ a:hover {
     }
 
     a {
-        width: 90%; /* Linkit täyttävät melkein koko mobiilinäytön leveyden */
-    }
-
-    ul {
-        padding: 0 10px; /* Lisätään tilaa mobiililaitteilla */
+        width: 100%; /* Linkit täyttävät leveyden mobiililla */
+        text-align: center;
     }
 }
