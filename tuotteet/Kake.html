@@ -1,1 +1,150 @@
+ <!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valitse alustasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000;
+            font-family: Roboto, sans-serif;
+            text-align: center;
+            padding-top: 5px;
+            color: white;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        /* Yleiset painikkeet */
+        .my-button {
+            background-color: #003366;
+            color: white;
+            border: 2px solid #FFD700; /* Kultainen kehys */
+            padding: 15px 40px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            margin: 10px;
+            width: 300px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Hover-efekti painikkeille */
+        .my-button:hover {
+            background-color: #002244;
+            box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.8);
+        }
+
+        /* Painikkeiden ympärillä oleva kehys */
+        .my-button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #000000;
+            width: 350px;
+            margin: 0 auto;
+            border: 2px solid #C0C0C0;
+            border-radius: 10px;
+        }
+
+        .button-container a {
+            text-decoration: none;
+        }
+
+        /* Kuvan asetukset */
+        img {
+            width: 350px;
+            height: auto;
+            margin-top: 20px;
+            box-shadow: 0 0 35px 5px rgba(255, 215, 0, 0.8);
+        }
+
+        /* Kuvien painike-tyyli */
+        .image-button {
+            width: 100%; /* Kuvan leveys täyttää containerin leveyden */
+            height: auto; /* Kuvan korkeus automaattisesti suhteessa leveys */
+            max-width: 300px; /* Maksimileveys */
+            max-height: 50px; /* Maksimikorkeus */
+            border-radius: 50px;
+            box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.8);
+            margin: 10px;
+            opacity: 0.8;
+            object-fit: contain; /* Kuvan mittasuhteiden säilyttäminen */
+            cursor: pointer;
+        }
+
+        .image-button:hover {
+            opacity: 1;
+        }
+
+        /* Erillinen tyyli Riipisen kuvapainikkeelle */
+        .riipisen-button {
+            width: 100%; /* Kuvan leveys täyttää containerin leveyden */
+            max-width: 700px; /* Maksimileveys suurennettu */
+            max-height: 150px; /* Maksimikorkeus suurennettu */
+            margin: 20px;
+            margin-left: 0px;
+            border-radius: 15px;
+            box-shadow: 0 0 0px 2px rgba(255, 215, 0, 0.8); /* Tummempi varjo */
+            opacity: 0.9;
+            object-fit: contain;
+        }
+
+        .riipisen-button:hover {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Tervetuloa P-kiekolle!</h1>
+
+<!-- Kuvan lisääminen -->
+<p>Kake Randelin Hitit</p>
+<img src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/refs/heads/main/kuvat/Kake%20Randelin.jfif" alt="Kake Randelin Hitit">
+
+<h1>Valitse alustasi:</h1>
+
+<!-- Painikkeet ja linkit -->
+<div class="my-button-container">
+    <!-- Tekstipainikkeet -->
+    <a href="https://open.spotify.com/album/66rQzTqQm0vPJOLD5YveAA">
+        <button class="my-button">Spotify</button>
+    </a>
+
+    <a href="https://www.youtube.com/playlist?list=PL9RFH1XmLdxP99dh7NEyfkgNWM8AICs0w">
+        <button class="my-button">YouTube</button>
+    </a>
+
+    <a href="https://www.poptori.fi/">
+        <button class="my-button">Poptori Oy</button>
+    </a>
+<p>POHJOISEN SUOMEN PARASTA PALVELUA</p>
+    <!-- Kuvapainikkeet -->
+    <a href="https://www.riipisen.fi/" target="_blank">
+        <img src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/main/kuvat/Riipisen_logo_riipisen.jfif" 
+             alt="Oma palvelin" 
+             class="riipisen-button"> <!-- Tässä käytetään uutta "riipisen-button" tyyliä -->
+    </a>
+
+ <a href="https://www.teboil.fi/asemaverkosto/suomussalmi/suomussalmi-turjanhovi/lounaslista-turjanhovi/" target="_blank">
+    <img src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/main/kuvat/teboil-logo.webp" 
+         alt="Teboil Turjanhovi" class="image-button">
+<p>SUOMUSSALMI / TURJANHOVI</p>
+</a>
+
+</div>
+
+</body>
+</html>
 
