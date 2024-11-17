@@ -1,6 +1,5 @@
-title: POP BEAT FINLAND
-description: Tuotteiden esittely
-theme: jekyll-theme-tactile # Voit vaihtaa teeman
+title: Time Machine theme
+description: Time Machine is a theme for GitHub Pages.
 show_downloads: true
-baseurl: "" # Jos projekti ei ole suoraan juurikansiossa, lisää sen nimi tähän
-url: "https://erkkipuumalainen.github.io"
+google_analytics:
+theme: jekyll-theme-time-machine
