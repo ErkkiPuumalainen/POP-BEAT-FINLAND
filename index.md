@@ -1,9 +1,13 @@
 ---
 layout: default
-title: Korttimallit
+title: POP BEAT FINLAND
 ---
 
-<h1>Korttimallit!</h1>
+# Tervetuloa POP BEAT FINLAND -sivustolle!
+
+Tässä on esittely POP BEAT FINLAND -tuotteistamme.
+
+## Korttimallit
 
 <ul>
   <!-- Dynaaminen lista kaikista tuotesivujen linkeistä -->
@@ -13,6 +17,8 @@ title: Korttimallit
     {% endif %}
   {% endfor %}
 </ul>
+
+## Tuotekategoriat
 
 <ul>
   <!-- Pop-kategoria -->
@@ -53,5 +59,3 @@ title: Korttimallit
   </li>
 </ul>
 
-</body>
-</html>
