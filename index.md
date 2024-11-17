@@ -1,8 +1,3 @@
----
-layout: default
-title: POP BEAT FINLAND
----
-
 # Tervetuloa POP BEAT FINLAND -sivustolle!
 
 Tässä on esittely POP BEAT FINLAND -tuotteistamme.
