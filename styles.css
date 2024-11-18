@@ -22,13 +22,13 @@ li a img {
 
 /* Otsikko */
 h1, h2 {
-    width: 100%; /* Koko näytön leveys */
+    width: 300px; /* kiinteä leveys */
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Varjostus */
-    margin: 10px 0;
-    padding: 10px 10px;
+    margin: 0 auto;
+    padding: 10px;
     background-color: rgb(0 25 255 / 25%); /* Sähkönsininen tausta läpinäkyvyydellä */
-    border-radius: 20px; /* Hieman pyöristetyt reunat */
+    border-radius: 8px; /* Hieman pyöristetyt reunat */
     border: 2px solid rgba(255, 255, 255, 0.8); /* Ohut valkoinen läpinäkyvä kehys */
 }
 
