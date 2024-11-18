@@ -11,8 +11,8 @@ html, body {
     min-height: 100%; /* Varmistaa taustakuvan peittävyyden */
     color: white; /* Teksti valkoiseksi */
     overflow-x: hidden; /* Estää vaakaskrollauksen */
-    border: 10px solid #00bfff; /* Sähkönsininen kehys */
-    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8); /* Valkoinen varjo */
+    border: 3px solid #ffffff; /* Sähkönsininen kehys */
+    box-shadow: 0 0 0px 10px rgb(5 7 170); /* Valkoinen varjo */
 }
 
 /* Otsikko */
@@ -20,10 +20,11 @@ h1, h2 {
     width: 100%; /* Koko näytön leveys */
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Varjostus */
-    margin: 20px 0;
-    padding: 10px 0;
-    background-color: rgba(0, 191, 255, 0.5); /* Sähkönsininen tausta läpinäkyvyydellä */
-    border-radius: 5px; /* Hieman pyöristetyt reunat */
+    margin: 10px 0;
+    padding: 10px 10px;
+    background-color: rgb(0 25 255 / 50%); /* Sähkönsininen tausta läpinäkyvyydellä */
+    border-radius: 20px; /* Hieman pyöristetyt reunat */
+    border: 5px solid rgba (128, 128, 128, 0.5);
 }
 
 /* Luetteloiden tyylit */
@@ -31,6 +32,9 @@ ul {
     list-style-type: none; /* Poistaa luettelomerkit */
     padding: 0;
     margin: 0 0 20px;
+    display: flex; /* Asetetaan flexboxiksi */
+    flex-direction: column; /* Järjestetään pystysuoraan */
+    align-items: center; /* Keskitetään sisältö */
 }
 
 ul li {
@@ -45,18 +49,18 @@ ul li ul {
 /* Linkkien tyylit */
 a {
     display: inline-block; /* Painikkeen tyyli */
-    background-color: #00bfff; /* Sähkönsininen tausta */
+    background-color: /* Sähkönsininen tausta */
     color: white; /* Valkoinen teksti */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.8); /* Sisäpuolen valkoinen hohde */
+    box-shadow: inset 0 0 10px rgb(200 199 6 / 80%); /* Sisäpuolen valkoinen hohde */
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
 /* Hover-efekti */
 a:hover {
-    background-color: #0099cc;
+    background-color: #ccba00bd;
     transform: translateY(-3px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
