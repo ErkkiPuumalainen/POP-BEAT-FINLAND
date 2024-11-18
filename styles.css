@@ -22,7 +22,7 @@ li a img {
 
 /* Otsikko */
 h1, h2 {
-    width: 300px; /* kiinteä leveys */
+    width: 100px; /* kiinteä leveys */
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Varjostus */
     margin: 5 auto;
