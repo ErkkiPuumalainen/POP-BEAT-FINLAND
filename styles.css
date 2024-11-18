@@ -15,9 +15,9 @@ html, body {
     box-shadow: 0 0 0px 10px rgb(5 7 170); /* Valkoinen varjo */
 }
 li a img {
-    width: 200px; /* Kuvan leveys */
+    width: 100px; /* Kuvan leveys */
     height: auto; /* Säilyttää kuvasuhteen */
-    border-radius: 8px; /* Pyöristetyt kulmat (valinnainen) */
+    border-radius: 10px; /* Pyöristetyt kulmat (valinnainen) */
 }
 
 /* Otsikko */
