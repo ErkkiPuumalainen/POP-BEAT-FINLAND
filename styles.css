@@ -27,9 +27,9 @@ h1, h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Varjostus */
     margin: 10px 0;
     padding: 10px 10px;
-    background-color: rgb(0 25 255 / 50%); /* Sähkönsininen tausta läpinäkyvyydellä */
+    background-color: rgb(0 25 255 / 25%); /* Sähkönsininen tausta läpinäkyvyydellä */
     border-radius: 20px; /* Hieman pyöristetyt reunat */
-    border: 5px solid rgba (128, 128, 128, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.8); /* Ohut valkoinen läpinäkyvä kehys */
 }
 
 /* Luetteloiden tyylit */
