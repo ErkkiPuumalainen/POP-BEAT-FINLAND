@@ -36,7 +36,7 @@ h1, h2 {
 ul {
     list-style-type: none; /* Poistaa luettelomerkit */
     padding: 0;
-    margin: 0 0 20px;
+    margin: 0 0 10px;
     display: flex; /* Asetetaan flexboxiksi */
     flex-direction: column; /* Järjestetään pystysuoraan */
     align-items: center; /* Keskitetään sisältö */
@@ -44,7 +44,7 @@ ul {
 }
 
 ul li {
-    margin-bottom: 10px; /* Väli linkkien välillä */
+    margin-bottom: 5px; /* Väli linkkien välillä */
 }
 
 ul li ul {
