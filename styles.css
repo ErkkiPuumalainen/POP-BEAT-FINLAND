@@ -60,7 +60,7 @@ a:hover {
 
 /* Otsikko */
 h1, h2 {
-    width: 300px; /* Kiinteä leveys */
+    width: 100%; /* Täyttää koko leveysruudun */
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Varjostus */
     margin: 10px auto; /* Keskitetään ja lisätään hieman väliä */
@@ -68,6 +68,16 @@ h1, h2 {
     background-color: rgb(0, 25, 255, 0.25); /* Sähkönsininen tausta läpinäkyvyydellä */
     border-radius: 8px; /* Pyöristetyt kulmat */
     border: none; /* Poistetaan kehys */
+}
+
+/* Kuvien koko ja keskittäminen */
+ul li a img {
+    width: 150px; /* Asetetaan kuville kiinteä leveys */
+    height: 150px; /* Asetetaan kuville kiinteä korkeus */
+    object-fit: cover; /* Varmistaa, että kuvat säilyttävät kuvasuhteen */
+    border-radius: 10px; /* Pyöristetyt kulmat kuville */
+    display: block; /* Poistaa kuville ylimääräiset rivivärit */
+    margin: 0 auto; /* Keskittää kuvan */
 }
 
 /* Media Queries - responsiivisuus */
@@ -79,5 +89,10 @@ h1, h2 {
     a {
         width: 100%; /* Linkit täyttävät leveyden mobiililla */
         text-align: center;
+    }
+
+    ul li a img {
+        width: 100px; /* Pienennetään kuvien kokoa mobiilissa */
+        height: 100px;
     }
 }
