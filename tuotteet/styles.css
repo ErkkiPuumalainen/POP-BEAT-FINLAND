@@ -39,7 +39,7 @@ ul {
 .poptori-button {
     width: 50px; /* Leveys */
     height: auto; /* Mittasuhteiden säilyttäminen */
-    border-radius: 10px; /* Pyöristetyt kulmat */
+    border-radius: 50px; /* Pyöristetyt kulmat */
     margin: 10px;
     cursor: pointer;
     background-color: white; /* Valkoinen tausta */
