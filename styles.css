@@ -45,28 +45,21 @@ a {
     box-shadow: inset 0 0 1px rgb(200 199 6 / 80%); /* Sisäpuolen valkoinen hohde */
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
     margin: 0 auto; /* Keskittää linkit */
-
-    
-    /* Poptori-painike */
+}
 .poptori-button {
-    width: 50px; /* Asetetaan leveys samanlaiseksi kuin Spotify-painikkeelle */
+    width: 100px; /* Kuvan leveys */
     height: auto; /* Automaattinen korkeus suhteessa leveyteen */
-    border-radius: 10px; /* Pyöristetyt kulmat */
+    border-radius: 10px;
     margin: 10px;
     cursor: pointer;
-    background-color: white; /* Valkoinen tausta */
+    background-color: white; /* Valkoinen tausta vain Poptori-painikkeelle */
     padding: 10px; /* Sisäiset marginaalit kuvan ympärille */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Kevyt varjo */
-    transition: box-shadow 0.3s, transform 0.3s, filter 0.3s; /* Lisää "filter"-efekti hoverille */
+    transition: box-shadow 0.3s, transform 0.3s;
 }
-
-/* Hover-efekti */
 .poptori-button:hover {
-    box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.8); /* Hehku-efekti */
-    transform: scale(1.1); /* Suurentaa hover-tilassa */
-    filter: brightness(1.2); /* Kirkastaa kuvaa hover-tilassa */
+    box-shadow: 0 0 10px 5px rgba(255, 215, 0, 0.8);
+    transform: scale(1.1); /* Suurentaa kuvaa hover-tilassa */
 }
-
 
 /* Hover-efekti */
 a:hover {
