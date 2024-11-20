@@ -49,7 +49,7 @@ a {
     
     /* Poptori-painike */
 .poptori-button {
-    width: 100px; /* Asetetaan leveys samanlaiseksi kuin Spotify-painikkeelle */
+    width: 50px; /* Asetetaan leveys samanlaiseksi kuin Spotify-painikkeelle */
     height: auto; /* Automaattinen korkeus suhteessa leveyteen */
     border-radius: 10px; /* Pyöristetyt kulmat */
     margin: 10px;
