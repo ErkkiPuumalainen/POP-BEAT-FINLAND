@@ -36,6 +36,22 @@ ul {
 
 
 }
+.poptori-button {
+    width: 100px; /* Leveys */
+    height: auto; /* Mittasuhteiden säilyttäminen */
+    border-radius: 10px; /* Pyöristetyt kulmat */
+    margin: 10px;
+    cursor: pointer;
+    background-color: white; /* Valkoinen tausta */
+    padding: 10px; /* Sisäiset marginaalit kuvan ympärille */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Kevyt varjo */
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.poptori-button:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.8); /* Hehku hover-tilassa */
+    transform: scale(1.1); /* Suurentaa hieman hover-tilassa */
+}
 
 
 ul li {
