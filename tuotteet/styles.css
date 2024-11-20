@@ -37,7 +37,7 @@ ul {
 
 }
 .poptori-button {
-    width: 100px; /* Leveys */
+    width: 50px; /* Leveys */
     height: auto; /* Mittasuhteiden säilyttäminen */
     border-radius: 10px; /* Pyöristetyt kulmat */
     margin: 10px;
