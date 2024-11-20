@@ -1,64 +1,113 @@
-/* Yleiset tyylit */
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-image: url('kuvat/TERAS.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed; /* Kiinteä tausta skrollauksen mukana */
-    font-family: Poppins, sans-serif;
-    min-height: 100vh; /* Varmistaa taustakuvan peittävyyden */
-    color: white; /* Teksti valkoiseksi */
-    overflow-x: hidden; /* Estää vaakaskrollauksen */
-    border: 2px solid #0404B4; /* Sähkönsininen kehys */
-    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8); /* Valkoinen varjo */
-}
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valitse alustasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000;
+            font-family: Roboto, sans-serif;
+            text-align: center;
+            padding-top: 5px;
+            color: white;
+        }
 
-/* Otsikko */
-h1, h2 {
-    width: 100%; /* Koko näytön leveys */
-    text-align: center;
-    text-shadow: 4px 4px 8px rgb(9 30 2); /* Varjostus */
-    margin: 0;
-    padding: 10px 0;
-    border-bottom: 3px solid rgba(255, 255, 255, 0.8); /* Korjattu läpinäkyvyys */
-    border-radius: 50px; /* Hieman pyöristetyt reunat */
-}
+        h1 {
+            color: #fff;
+        }
 
-/* Luetteloiden tyylit */
-ul {
-    list-style-type: none; /* Poistaa luettelomerkit */
-    padding: 0;
-    margin: 50px 0;
-}
+        /* Painikkeiden ja logojen yhteinen kehys */
+        .my-button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #000000;
+            width: 350px;
+            margin: 20px auto;
+            border: 2px solid #C0C0C0;
+            border-radius: 10px;
+        }
 
-.poptori-button {
-    width: 50px; /* Leveys */
-    height: auto; /* Mittasuhteiden säilyttäminen */
-    border-radius: 50px; /* Pyöristetyt kulmat */
-    margin: 10px;
-    cursor: pointer;
-    background-color: white; /* Valkoinen tausta */
-    padding: 10px; /* Sisäiset marginaalit kuvan ympärille */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Kevyt varjo */
-    transition: box-shadow 0.3s, transform 0.3s;
-}
+        /* Kuvan asetukset */
+        img {
+            width: 350px;
+            height: auto;
+            margin-top: 20px;
+            box-shadow: 0 0 35px 5px rgba(255, 215, 0, 0.8);
+        }
 
-.poptori-button:hover {
-    box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.8); /* Hehku hover-tilassa */
-    transform: scale(1.1); /* Suurentaa hieman hover-tilassa */
-}
+        /* Kuvapainikkeet */
+        .image-button {
+            width: 100px; /* Kuvan leveys */
+            height: auto; /* Automaattinen korkeus suhteessa leveyteen */
+            border-radius: 10px;
+            margin: 10px;
+            cursor: pointer;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
 
-ul li {
-    margin-bottom: 8px; /* Väli luettelokohtien välillä */
-}
+        .image-button:hover {
+            box-shadow: 0 0 10px 5px rgba(255, 215, 0, 0.8);
+            transform: scale(1.1); /* Suurentaa kuvaa hover-tilassa */
+        }
 
-/* Linkkien tyylit */
-a {
-    display: inline-block; /* Muuttaa linkit painikkeen muotoon */
-    text-align: center; /* Keskittää sisällön linkissä */
-    background-color: #003366; /* Esimerkki taustaväri */
-    color: white; /* Teksti valkoiseksi */
-    padding: 10px 20px; /* Sisätilaa */
-    text-decoration: none; /* Poi
+        /* Tekstipainikkeet */
+        .my-button {
+            background-color: #003366;
+            color: white;
+            border: 2px solid #FFD700; /* Kultainen kehys */
+            padding: 15px 40px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+            margin: 10px;
+            width: 300px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Hover-efekti tekstipainikkeille */
+        .my-button:hover {
+            background-color: #002244;
+            box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.8);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<h1>Tervetuloa P-kiekolle!</h1>
+
+<!-- Kuvan lisääminen -->
+<p>🎄Hyvää Joulua🎄</p>
+<img src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/main/kuvat/IMG-20241112-WA0002.jpg" alt="joulukortti">
+
+<h1>Valitse alustasi:</h1>
+
+<!-- Painikkeet ja linkit -->
+<div class="my-button-container">
+    <!-- Spotify-kuvapainike -->
+    <a href="https://open.spotify.com/playlist/7aIcLNK3dzPPW4kTQaEfwH?flow_ctx=2629f753-503b-449b-abb2-87d6c605b52a%3A1731889625&creation_point=https%3A%2F%2Fopen.spotify.com%2Falbum%2F66rQzTqQm0vPJOLD5YveAA%3Fsp_cid%3D8f0ebe8a465684e3612e52d272621636%26device%3Ddesktop">
+        <img class="image-button" src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/main/kuvat/Spotify-Logo.wine.png" alt="Spotify">
+    </a>
+
+    <!-- YouTube-tekstipainike -->
+    <a href="https://www.youtube.com/watch?v=FTTKFkwHj5s&list=OLAK5uy_md40n1quOeJ5vD-6wZkKC0l9pBiditt1s&index=1&ab_channel=Danny-Topic">
+        <button class="my-button">YouTube</button>
+    </a>
+
+    <!-- Poptori Oy -tekstipainike -->
+    <a href="https://www.poptori.fi/">
+        <button class="my-button">Poptori Oy</button>
+    </a>
+</div>
+
+</body>
+</html>
