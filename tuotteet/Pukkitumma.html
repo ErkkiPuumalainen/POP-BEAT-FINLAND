@@ -1,5 +1,4 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
@@ -19,32 +18,7 @@
             color: #fff;
         }
 
-        /* Yleiset painikkeet */
-        .my-button {
-            background-color: #003366;
-            color: white;
-            border: 2px solid #FFD700; /* Kultainen kehys */
-            padding: 15px 40px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 50px;
-            transition: background-color 0.3s, box-shadow 0.3s;
-            margin: 10px;
-            width: 300px;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        /* Hover-efekti painikkeille */
-        .my-button:hover {
-            background-color: #002244;
-            box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.8);
-        }
-
-        /* Painikkeiden ympärillä oleva kehys */
+        /* Painikkeiden ja logojen yhteinen kehys */
         .my-button-container {
             display: flex;
             flex-direction: column;
@@ -52,13 +26,9 @@
             padding: 20px;
             background-color: #000000;
             width: 350px;
-            margin: 0 auto;
+            margin: 20px auto;
             border: 2px solid #C0C0C0;
             border-radius: 10px;
-        }
-
-        .button-container a {
-            text-decoration: none;
         }
 
         /* Kuvan asetukset */
@@ -69,30 +39,46 @@
             box-shadow: 0 0 35px 5px rgba(255, 215, 0, 0.8);
         }
 
-        /* Kuvien painike-tyyli */
+        /* Kuvapainikkeet */
         .image-button {
-            width: 100%; /* Kuvan leveys täyttää containerin leveyden */
-            height: auto; /* Kuvan korkeus automaattisesti suhteessa leveys */
-            max-width: 300px; /* Maksimileveys */
-            max-height: 50px; /* Maksimikorkeus */
-            border-radius: 50px;
-            box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.8);
+            width: 100px; /* Kuvan leveys */
+            height: auto; /* Automaattinen korkeus suhteessa leveyteen */
+            border-radius: 10px;
             margin: 10px;
-            opacity: 0.8;
-            object-fit: contain; /* Kuvan mittasuhteiden säilyttäminen */
             cursor: pointer;
+            transition: box-shadow 0.3s, transform 0.3s;
         }
 
         .image-button:hover {
-            opacity: 1;
+            box-shadow: 0 0 10px 5px rgba(255, 215, 0, 0.8);
+            transform: scale(1.1); /* Suurentaa kuvaa hover-tilassa */
         }
 
-    
+        /* Tekstipainikkeet */
+        .my-button {
+            background-color: #003366;
+            color: white;
+            border: 2px solid #FFD700; /* Kultainen kehys */
+            padding: 15px 40px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+            margin: 10px;
+            width: 300px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
-      
+        /* Hover-efekti tekstipainikkeille */
+        .my-button:hover {
+            background-color: #002244;
+            box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.8);
+            transform: scale(1.05);
         }
-
     </style>
 </head>
 <body>
@@ -107,24 +93,20 @@
 
 <!-- Painikkeet ja linkit -->
 <div class="my-button-container">
-    <!-- Kuvapainike Spotify -->
+    <!-- Spotify-kuvapainike -->
     <a href="https://open.spotify.com/playlist/7aIcLNK3dzPPW4kTQaEfwH?flow_ctx=2629f753-503b-449b-abb2-87d6c605b52a%3A1731889625&creation_point=https%3A%2F%2Fopen.spotify.com%2Falbum%2F66rQzTqQm0vPJOLD5YveAA%3Fsp_cid%3D8f0ebe8a465684e3612e52d272621636%26device%3Ddesktop">
-        <img src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/main/kuvat/Spotify-Logo.wine.png" alt="Spotify" style="display: block; width: 100px; height: auto;">
+        <img class="image-button" src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/main/kuvat/Spotify-Logo.wine.png" alt="Spotify">
     </a>
-</div>
 
-
- 
+    <!-- YouTube-tekstipainike -->
     <a href="https://www.youtube.com/watch?v=FTTKFkwHj5s&list=OLAK5uy_md40n1quOeJ5vD-6wZkKC0l9pBiditt1s&index=1&ab_channel=Danny-Topic">
         <button class="my-button">YouTube</button>
     </a>
 
+    <!-- Poptori Oy -tekstipainike -->
     <a href="https://www.poptori.fi/">
         <button class="my-button">Poptori Oy</button>
     </a>
-
-</a>
-
 </div>
 
 </body>
