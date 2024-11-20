@@ -1,26 +1,24 @@
-<!DOCTYPE html>
+
+ <!DOCTYPE html>
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valitse alustasi</title>
-      <link rel="stylesheet" href="styles.css">
-
-   
-
-    <style> 
-       
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
         body {
-            background-image: kuvat/TERAS.jpg;
+            background-color: #000000;
             font-family: Roboto, sans-serif;
             text-align: center;
             padding-top: 5px;
             color: white;
         }
+
         h1 {
             color: #fff;
         }
+
         /* Yleiset painikkeet */
         .my-button {
             background-color: #003366;
@@ -39,25 +37,38 @@
             align-items: center;
             text-align: center;
         }
+
         /* Hover-efekti painikkeille */
         .my-button:hover {
             background-color: #002244;
             box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.8);
         }
-        
-            
-            border-radius: 0px;
+
+        /* Painikkeiden ympärillä oleva kehys */
+        .my-button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #000000;
+            width: 350px;
+            margin: 0 auto;
+            border: 2px solid #C0C0C0;
+            border-radius: 10px;
         }
+
         .button-container a {
             text-decoration: none;
         }
+
         /* Kuvan asetukset */
         img {
-            width: 280px;
+            width: 350px;
             height: auto;
             margin-top: 20px;
             box-shadow: 0 0 35px 5px rgba(255, 215, 0, 0.8);
         }
+
         /* Kuvien painike-tyyli */
         .image-button {
             width: 100%; /* Kuvan leveys täyttää containerin leveyden */
@@ -71,9 +82,11 @@
             object-fit: contain; /* Kuvan mittasuhteiden säilyttäminen */
             cursor: pointer;
         }
+
         .image-button:hover {
             opacity: 1;
         }
+
         /* Erillinen tyyli Riipisen kuvapainikkeelle */
         .riipisen-button {
             width: 100%; /* Kuvan leveys täyttää containerin leveyden */
@@ -86,29 +99,41 @@
             opacity: 0.9;
             object-fit: contain;
         }
+
         .riipisen-button:hover {
             opacity: 1;
         }
+
     </style>
 </head>
 <body>
-    <h1>Tervetuloa P-kiekolle!</h1>
-    <!-- Kuvan lisääminen -->
-    <p>Joulukortti</p>
-    <img src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/main/kuvat/IMG-20241112-WA0002.jpg" alt="joulukortti">
-    <h2>VALITSE ALUSTASI::</h2>
-    <!-- Painikkeet ja linkit -->
-    <div class="my-button-container">
-        <!-- Tekstipainikkeet -->
-        <a href="https://open.spotify.com/playlist/7aIcLNK3dzPPW4kTQaEfwH?flow_ctx=2629f753-503b-449b-abb2-87d6c605b52a%3A1731889625&creation_point=https%3A%2F%2Fopen.spotify.com%2Falbum%2F66rQzTqQm0vPJOLD5YveAA%3Fsp_cid%3D8f0ebe8a465684e3612e52d272621636%26device%3Ddesktop">
-            <button class="my-button">Spotify</button>
-        </a>
-        <a href="https://www.youtube.com/watch?v=FTTKFkwHj5s&list=OLAK5uy_md40n1quOeJ5vD-6wZkKC0l9pBiditt1s&index=1&ab_channel=Danny-Topic">
-            <button class="my-button">YouTube</button>
-        </a>
-        <a href="https://www.poptori.fi/">
-            <button class="my-button">Poptori Oy</button>
-        </a>
-    </div>
+
+<h1>Tervetuloa P-kiekolle!</h1>
+
+<!-- Kuvan lisääminen -->
+<p>Kake Randelin Hitit</p>
+<img src="https://raw.githubusercontent.com/ErkkiPuumalainen/POP-BEAT-FINLAND/main/kuvat/IMG-20241112-WA0002.jpg" alt="joulukortti">
+
+<h1>Valitse alustasi:</h1>
+
+<!-- Painikkeet ja linkit -->
+<div class="my-button-container">
+    <!-- Tekstipainikkeet -->
+    <a href="https://open.spotify.com/playlist/7aIcLNK3dzPPW4kTQaEfwH?flow_ctx=2629f753-503b-449b-abb2-87d6c605b52a%3A1731889625&creation_point=https%3A%2F%2Fopen.spotify.com%2Falbum%2F66rQzTqQm0vPJOLD5YveAA%3Fsp_cid%3D8f0ebe8a465684e3612e52d272621636%26device%3Ddesktop">
+        <button class="my-button">Spotify</button>
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=FTTKFkwHj5s&list=OLAK5uy_md40n1quOeJ5vD-6wZkKC0l9pBiditt1s&index=1&ab_channel=Danny-Topic">
+        <button class="my-button">YouTube</button>
+    </a>
+
+    <a href="https://www.poptori.fi/">
+        <button class="my-button">Poptori Oy</button>
+    </a>
+
+</a>
+
+</div>
+
 </body>
 </html>
